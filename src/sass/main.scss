@@ -1,0 +1,37 @@
+@import 'variable';
+
+@import 'bg';
+@import 'btn';
+@import 'container';
+@import 'copyright';
+@import 'desc';
+@import 'fv';
+@import 'footer';
+@import 'header';
+@import 'logo';
+@import 'news';
+@import 'sec-desc';
+@import 'sec-news';
+
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Noto Sans JP";
+    color: $black;
+    background-color: $bg_color;
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+}
+
+ul {
+    list-style-type: none;
+}
+img{
+    // display: block;
+    max-width: 100%;
+}

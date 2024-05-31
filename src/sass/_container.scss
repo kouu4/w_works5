@@ -1,0 +1,21 @@
+$container_padding: 30px;
+
+// .container--fv,
+.container--desc,
+.container--news {
+    padding-inline: $container_padding;
+    margin-inline: auto;
+}
+
+// .container--fv {
+//     width: 100%;
+//     max-width: 829px;
+// }
+
+.container--desc {
+    max-width: calc(900px + ($container_padding * 2));
+}
+
+.container--news {
+    max-width: calc(1206px + ($container_padding * 2));
+}

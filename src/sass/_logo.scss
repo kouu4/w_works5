@@ -1,0 +1,12 @@
+.logo {
+    display: block;
+    min-width: 70px;
+    width: 13.374%;
+    max-width: 102px;
+
+    & .logo__link,
+    & img {
+        width: 100%;
+    }
+
+}

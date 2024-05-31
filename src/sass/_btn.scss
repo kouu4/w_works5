@@ -1,0 +1,47 @@
+.btn--header,
+.btn--desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn--desc {
+    width: 200px;
+    height: 60px;
+    color: $black;
+    background-color: $white;
+    font-family: 'Zen Old Mincho';
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    line-height: 60px; /* heightと合わせることでvertical-alignが効く */
+    vertical-align: middle;
+    transition: background-color 0.4s;
+
+    &:hover {
+        color: $white;
+        background-color: $accent;
+    }
+}
+
+.btn--header {
+    width: clamp(140px, 23.3333%, 200px);
+    height: 40px;
+    color: $white;
+    background-color: $accent;
+    font-family: "Zen Old Mincho";
+    font-size: 14px;
+    transition: background-color 0.4s;
+
+    &:hover {
+        color: $accent;
+        background-color: $white;
+    }
+}
+
+@media screen and (min-width: 768px), print {
+    .btn--header {
+        height: 60px;
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,101 @@
+.fv {
+    position: relative;
+    padding-top: 187px;
+
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: calc(100% - 90px);
+        background-image: url("../../src/img/fv-bg.jpg");
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+    }
+}
+
+.fv__container {
+    padding-inline: 30px;
+}
+
+.fv__body{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 83px;
+}
+
+.fv__ttl {
+    position: relative;
+    z-index: 2;
+}
+
+.fv__image1 {
+    width: 60.55%;
+}
+
+.fv__imageFrame {
+    margin-top: -18vw;
+}
+
+.fv__image2{
+    position: relative;
+    z-index: 1;
+}
+
+
+
+
+
+@media screen and (min-width: 768px), print {
+
+    .fv{
+        padding-top: 187px;
+    }
+
+    .fv__container {
+        max-width: 900px;
+        margin-inline: auto;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .fv__body {
+        display: block;
+        flex: 1;
+    }
+
+    .fv__ttl {
+        width: 130%;
+    }
+    
+    .fv__image1{
+        width: 80%;
+        margin-right: auto;
+    }
+
+    .fv__imageFrame {
+        flex: 1;
+        margin-top: initial;
+    }
+    
+
+    
+}
+
+
+@media screen and (min-width: 1280px), print {
+
+    .fv{
+        padding-top: 187px;
+    }
+
+    .fv__container {
+        max-width: 1080px;
+    }
+
+}

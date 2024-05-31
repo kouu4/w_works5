@@ -1,0 +1,78 @@
+.desc__ttl {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: $white;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    z-index: 1;
+    
+    & div {
+        display: inline-block;
+        height: 49px;
+        vertical-align: middle;
+    }
+    
+    & div span{
+        display: inline-block;
+        background-color: $accent;
+        padding-inline: 20px;
+        height: 100%;
+        line-height: 49px; /* divと高さを合わせることでvertical-alignが効く */
+        vertical-align: middle;
+    }
+
+}
+
+.desc__body {
+    margin-top: -44px;
+    padding: 67px;
+    background-color: $box_color;
+    text-align: center;
+}
+
+.desc__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 45px;
+    letter-spacing: 0.1em;
+
+    & + .desc__text {
+        margin-top: 64px;
+    }
+}
+
+.desc__btn {
+    display: inline-block;
+    margin-top: 70px;
+}
+
+@media screen and (min-width: 768px), print {
+    .desc__ttl {
+        font-size: 30px;
+
+        & div {
+            height: 74px;
+        }
+
+        & div span {
+            line-height: 74px;
+        }
+    }
+
+    .desc__text {
+
+        .desc__body &:first-of-type {
+            margin-top: 20px;
+        }
+        
+        & + .desc__text {
+            margin-top: 47px;
+        }
+    }
+
+    .desc__btn {
+        margin-top: 60px;
+    }
+}
